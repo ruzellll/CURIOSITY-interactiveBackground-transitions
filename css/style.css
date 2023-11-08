@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 5px;
+    padding: 3px;
+    overflow: hidden;
+    background-color: #181818;
+    position: relative;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+}
+
+.box {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    transition: background-color 0s ease;
+    border-radius: 0.3rem;
+    box-shadow: none;
+}
+.hover {
+    background-color: #ff160c;
+    box-shadow: 0px 0px 15px #ff160c;
+  }
+
+.hovered {
+    background-color: #000000 !important;
+    box-shadow: none;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+  }
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff160c;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px #ff160c;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+main:hover{
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+#logo:hover{
+    width: 370px;
+    height: 170px;
+    font-size: 8rem;
+    transition: font-size 1s ease, width 0.7s ease, height 0.7s ease;
+}
+
+#logo{
+    display: flex;
+    background-color: #000000;
+    width: 330px;
+    height: 150px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: font-size 1s ease, width 0.7s ease, height 0.7s ease;
+  
+    font-size: 6rem;
+    color: #ff160c;
+    text-shadow: 0px 0px 10px #ff160c;
+    user-select: none;  
+    
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+
+section{
+    position: absolute;
+    width: 113px;
+    height: 40px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff160c;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px #ff160c;
+}
+
+section p{
+  padding: 0.5rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  color: #ff160c;
+  text-shadow: 0px 0px 10px #ff160c;
+  z-index: 2;
+}
+
+section a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  z-index: 2;
+}
+area{
+  position: absolute;
+  background-color: #000000;
+  width: 60px;
+  height: 33px;
+  z-index: 1;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+
+  top: 0.25rem;
+  left: 0.25rem;
+}
